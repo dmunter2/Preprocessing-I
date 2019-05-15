@@ -139,22 +139,22 @@ body {
 html {
   font-family: 'Roboto', sans-serif;
 }
-img {
-  height: 10%;
-  width: 19%;
-  margin: 3% 3% 1%;
-}
 nav {
   display: flex;
   justify-content: right;
 }
-a {
+nav a {
   padding: 2%;
   text-decoration: none;
   color: black;
   font-size: 1rem;
 }
-button {
+body div img {
+  height: 10%;
+  width: 19%;
+  margin: 3% 3% 1%;
+}
+body div button {
   margin: 2% 3% 5%;
   height: 40px;
   width: 100px;
@@ -186,15 +186,6 @@ tbody {
   display: flex;
   width: 100%;
 }
-tr {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2%;
-  width: 100%;
-}
-.bottom-border-node {
-  border-bottom: 1px solid #B8B8B8;
-}
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -207,25 +198,28 @@ tr {
   display: flex;
   justify-content: space-between;
 }
-.box1 {
+.container3 .box1 {
   width: 47%;
   padding: 2% 0% 2%;
 }
-.intro-aboutme {
+.container3 .intro-aboutme {
   font-size: 1.4rem;
   font-weight: bold;
   padding-bottom: 2%;
 }
-.intro-aboutme2 {
+.container3 .intro-aboutme2 {
   padding-top: 2%;
 }
-.skills {
+.container3 .skills {
   font-size: 1.2rem;
   padding-bottom: 2%;
   font-weight: bold;
 }
 .list1 {
   margin: 2% 0 2%;
+}
+.list1 .bottom-border-node {
+  border-bottom: 1px solid #B8B8B8;
 }
 .introduction {
   margin-left: 3%;
@@ -252,6 +246,23 @@ tr {
   margin-top: 1%;
   display: flex;
 }
+.table tr {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  width: 100%;
+}
 .table-title {
   font-weight: bold;
+}
+.container4 .work-history {
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #B8B8B8;
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
