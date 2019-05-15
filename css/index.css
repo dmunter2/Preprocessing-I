@@ -191,6 +191,12 @@ tbody {
   margin: 0 auto;
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    background-color: blue;
+  }
+}
 .container2 {
   background-color: #D2D3D5;
 }

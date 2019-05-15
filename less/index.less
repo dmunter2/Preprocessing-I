@@ -67,6 +67,14 @@ html, body {
 @iron: #D2D3D5;
 @silver: #B8B8B8;
 
+
+.padding-bottom(){
+	padding-bottom: 2%; 
+}
+.bold-font(){
+	font-weight: bold;
+}
+
 html{
 	font-family: 'Roboto',
 	sans-serif;
@@ -138,6 +146,11 @@ tbody{
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 15px;
+
+	@media(max-width: 500px){
+		width:100%;
+		background-color: blue;
+	}
 }
 
 .container2 {
@@ -154,8 +167,8 @@ tbody{
 	}
 	.intro-aboutme {
 		font-size: 1.4rem;
-		font-weight: bold;
-		padding-bottom: 2%;
+		.bold-font
+		.padding-bottom
 	}
 
 	.intro-aboutme2 {
@@ -164,8 +177,8 @@ tbody{
 
 	.skills {
 		font-size: 1.2rem;
-		padding-bottom: 2%;
-		font-weight: bold;
+		.padding-bottom
+		.bold-font
 
 	}
 }
@@ -186,7 +199,7 @@ tbody{
 
 .intro-name {
 	font-size: 3.5rem;
-	padding-bottom: 2%;
+	.padding-bottom
 }
 
 .intro-saying {
@@ -205,7 +218,7 @@ tbody{
 	font-size: 1.2rem;
 	padding-bottom: 1%;
 	border-bottom: 1px solid @main-border;
-	font-weight: bold;
+	.bold-font
 }
 
 .table{
@@ -221,8 +234,8 @@ tbody{
 
 }
 
-.table-title{
-	font-weight: bold;
+.table-title {
+	.bold-font
 }
 
 .container4{
@@ -239,7 +252,10 @@ tbody{
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
-
+.contactme{
+	margin-top: 4%;
+	padding-top: 3%;
+}
 
 
 
