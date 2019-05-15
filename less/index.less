@@ -67,7 +67,10 @@ html, body {
 @iron: #D2D3D5;
 @silver: #B8B8B8;
 
-
+html{
+	font-family: 'Roboto',
+	sans-serif;
+}
 
 img {
 	height: 10%;
@@ -75,17 +78,7 @@ img {
 	margin: 3% 3% 1%;
 }
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 15px;
-}
-
-.container2 {
-	background-color: @main-background;
-}
- 
-nav{
+nav {
 	display: flex;
 	justify-content: right;
 }
@@ -97,7 +90,7 @@ a {
 	font-size: 1rem;
 }
 
-button{
+button {
 	margin: 2% 3% 5%;
 	height: 40px;
 	width: 100px;
@@ -105,12 +98,86 @@ button{
 	background-color: #636363;
 	border: 1px solid white;
 	color: white;
-	
+}
 
-	hover{
-		background-color: blue;
+li{
+
+	padding: 2%;
+	padding-left: 5%;
+	border-left: 1px solid @main-border;
+	border-top: 1px solid @main-border;
+	border-right: 1px solid @main-border;
+}
+
+th {
+	padding: 10px;
+
+	th:nth-child(2){
+		background-color: @main-border;
 	}
-	
+	th:nth-child(4){
+		background-color: @main-border;
+	}
+	th:nth-child(1){
+		border-top: @main-border;
+	}
+}
+
+
+
+
+tbody{
+	display: flex;
+	width: 100%;
+}
+tr{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.bottom-border-node{
+	border-bottom: 1px solid @main-border;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.container2 {
+	background-color: @main-background;
+}
+.container3{
+	display: flex;
+	justify-content: space-between;
+}
+
+.box1{
+	width: 47%;
+	padding: 2% 0% 2%;
+
+}
+
+.intro-aboutme{
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-bottom: 2%;
+}
+.intro-aboutme2 {
+	padding-top: 2%;
+}
+.skills{
+	font-size: 1.2rem;
+	padding-bottom: 2%;
+	font-weight: bold;
+
+}
+
+.list1{
+	margin: 2% 0 2%;
 }
 
 .introduction{
@@ -118,7 +185,7 @@ button{
 }
 
 .intro-name{
-	font-size: 50px;
+	font-size: 3.5rem;
 	padding-bottom: 2%;
 }
 .intro-saying{
@@ -129,5 +196,27 @@ button{
 .intro-saying2{
 	margin: 2% 3% 2%;
 }
+
+.work-history{
+	font-size: 1.2rem;
+	padding-bottom: 1%;
+	border-bottom: 1px solid @main-border;
+	font-weight: bold;
+}
+
+.table{
+	margin-top: 1%;
+	display: flex;
+
+}
+
+.table-title{
+	font-weight: bold;
+}
+
+.container4{
+}
+
+
 
 
